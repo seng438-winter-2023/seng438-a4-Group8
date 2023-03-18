@@ -52,9 +52,11 @@ One thing we have noticed by inspecting the mutation changes using PIT is that i
 However, in the end we are happy with the percentage of mutation coverage we got up to, that is, 90%. This percentage is accounting for all the equivalent mutations as well, which means that our real mutation coverage would be much higher, close to 100%!
 
 Range.java before changes.
+
 <img src="./media/RangeBefore.png" width="700" />
 
 Range.java after changes.
+
 <img src="./media/RangeAfter.png" width="700" />
 
 As shown above we were able to improve our testing of the range class with line coverage going up from 95% to 100% and mutation coverage going up from 70% to 80%.
