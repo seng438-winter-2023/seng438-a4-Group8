@@ -170,6 +170,8 @@ Disadvantages of Sikulix:
 
 # How the team work/effort was divided and managed
 
+The work was divided equally among us which we managed through making goals for each member beforehand.
+
 # Difficulties encountered, challenges overcome, and lessons learned
 
 Many of the problems occurred with selenium, where the program did not work well with many of our computers. We saw people who used Firefox have it work better and people with chrome work worse. The program was unresponsive and simply created many unexpected results. We managed to get tests down by countless restarts and retries. In the end we learned that testing is about persistence. 
