@@ -1,0 +1,2193 @@
+{
+  "id": "fe7c5e28-8ced-4cc1-9371-ef3964267269",
+  "version": "2.0",
+  "name": "SENG 438 Assignment 4",
+  "url": "https://www.ikea.com",
+  "tests": [{
+    "id": "b8b237ac-2adf-48a5-855f-5849667b0439",
+    "name": "Search for blahaj and add 999 to cart, try to add more ",
+    "commands": [{
+      "id": "8a1002ad-a01f-42ed-909c-c42e5cf72654",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb018993-67e2-4ae7-ab08-6b873bbc6025",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1291x712",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6dce0e87-bb3b-4b8c-a450-aef27cf09952",
+      "comment": "",
+      "command": "click",
+      "target": "css=.svelte-4987es .website-link",
+      "targets": [
+        ["css=.svelte-4987es .website-link", "css:finder"],
+        ["xpath=//div[@id='mountId']/div/main/div/div/div/section/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/?ref=gwp-start')])[2]", "xpath:href"],
+        ["xpath=//section/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b7fe583-ad38-4d29-ab1d-28eb96e7660d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "471caaea-1702-4631-a8df-176621f2177f",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60fbd421-699a-4d34-b4b4-175b983b51e4",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "blahaj"
+    }, {
+      "id": "25841d19-4c0a-447a-ad6a-9fb10f92191e",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-box__searchbutton",
+      "targets": [
+        ["id=search-box__searchbutton", "id"],
+        ["css=#search-box__searchbutton", "css:finder"],
+        ["xpath=//button[@id='search-box__searchbutton']", "xpath:attributes"],
+        ["xpath=//span[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c479093-707d-4d7c-9ff6-e792d8acdfcd",
+      "comment": "Indicate results showing for blahaj",
+      "command": "assertText",
+      "target": "css=b",
+      "targets": [
+        ["css=b", "css:finder"],
+        ["xpath=//main[@id='content']/div/div/div/section/div/h1/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'blahaj')]", "xpath:innerText"]
+      ],
+      "value": "blahaj"
+    }, {
+      "id": "19f8852a-41b4-4a78-9cd0-41b19301078d",
+      "comment": "blahaj item should exist",
+      "command": "assertElementPresent",
+      "target": "css=.plp-product-list__products > .plp-fragment-wrapper:nth-child(1) .pip-aspect-ratio-box:nth-child(2) > .pip-image",
+      "targets": [
+        ["css=.plp-product-list__products > .plp-fragment-wrapper:nth-child(1) .pip-aspect-ratio-box:nth-child(2) > .pip-image", "css:finder"],
+        ["xpath=//img[contains(@src,'https://www.ikea.com/ca/en/images/products/blahaj-soft-toy-baby-shark__0877387_pe730955_s5.jpg?f=xxs')]", "xpath:img"],
+        ["xpath=//section[@id='product-list']/div/div/div[2]/div/div/a/div/span[2]/img", "xpath:idRelative"],
+        ["xpath=//span[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76aa9621-2d09-4d10-afe8-d6018646cdbc",
+      "comment": "Have a feature to add to cart on the page",
+      "command": "assertElementPresent",
+      "target": "css=.plp-product-list__products > .plp-fragment-wrapper:nth-child(1) .pip-btn:nth-child(1)",
+      "targets": [
+        ["css=.plp-product-list__products > .plp-fragment-wrapper:nth-child(1) .pip-btn:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//section[@id='product-list']/div/div/div[2]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc2a5c04-583b-451b-90cf-f1dafaf290c5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1.3333333730697632)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19bf7891-a738-47fc-a739-338c34740a38",
+      "comment": "",
+      "command": "click",
+      "target": "css=.plp-product-list__products > .plp-fragment-wrapper:nth-child(1) .pip-aspect-ratio-box:nth-child(2) > .pip-image",
+      "targets": [
+        ["css=.plp-product-list__products > .plp-fragment-wrapper:nth-child(1) .pip-aspect-ratio-box:nth-child(2) > .pip-image", "css:finder"],
+        ["xpath=//img[contains(@src,'https://www.ikea.com/ca/en/images/products/blahaj-soft-toy-baby-shark__0877387_pe730955_s5.jpg?f=xxs')]", "xpath:img"],
+        ["xpath=//section[@id='product-list']/div/div/div[2]/div/div/a/div/span[2]/img", "xpath:idRelative"],
+        ["xpath=//span[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8b16545-6cb9-4a37-aa76-ff0df3291997",
+      "comment": "Add to cart exists",
+      "command": "verifyElementPresent",
+      "target": "css=.pip-btn--emphasised .pip-btn__label",
+      "targets": [
+        ["css=.pip-btn--emphasised .pip-btn__label", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86b083d1-3b05-4d38-a8e3-fe975096307a",
+      "comment": "BLÅHAJ is shown",
+      "command": "verifyText",
+      "target": "css=.pip-header-section__title--big",
+      "targets": [
+        ["css=.pip-header-section__title--big", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div/div/div[2]/h1/div/div/span", "xpath:idRelative"],
+        ["xpath=//h1/div/div/span", "xpath:position"]
+      ],
+      "value": "BLÅHAJ"
+    }, {
+      "id": "75509a63-1451-429f-b1ab-de6d1829e05b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e89ca1eb-82b1-40ac-82db-e808b5f7a49b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80d92ce2-4b93-4d1c-ad98-c18bca0c3dfb",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96e17014-363d-4c17-bf87-bd9c5402eef8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3861c2a1-71c0-4926-95ae-f8cf7d0f37fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09e488e5-28f7-4a3e-943e-cdac57e0fdf3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eaa15358-8d11-464a-a4e2-fa505b93c18f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "482d41ed-4cd8-4459-a55f-6e60e621a4e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b234bbe-e7d7-479f-8833-ada7e7fbdc42",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f042ab2b-cf6f-46c7-bd6a-8edf188e6ce9",
+      "comment": "Value of number added should be 10 after 10 clicks",
+      "command": "assertText",
+      "target": "css=.pip-btn--emphasised .pip-btn__label",
+      "targets": [
+        ["css=.pip-btn--emphasised .pip-btn__label", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Add 10 items to cart"
+    }, {
+      "id": "26a8f633-de1e-438c-a82e-2ebd8ce90127",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7ebf792-7011-4ab5-aa37-0bab5fd87050",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebc5c144-4a24-44b3-b333-e47e2c8c186d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc06b29c-3485-4e1a-95f0-3d8840af5d0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf87ed0f-ccb5-4689-a260-f233afd49547",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "418b6310-b555-4049-8e38-6e727c759197",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b001945-fca2-4732-92bc-caeff94ef5bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "978d521e-170a-4c90-b222-25a5da005375",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64b78a5a-47bc-4a08-9290-c220dd31ab74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f82f17a-35b6-4bb1-95b2-0163b0cc4dfa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0181db02-6d02-4979-9102-f1c5fad0a593",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d754005-095b-48f2-ad8f-ff120b364394",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6299754f-9c66-4581-a5ca-9008ce6b8904",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f4877e4-88a0-405e-9b7f-1e339565a350",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0127e916-cb45-443f-b722-255501ef3daa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a346d043-a886-4c76-8dc5-c81155033c06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c457d3eb-0105-40b0-9b93-cccedb311314",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15f7f470-bd0d-463f-8fb1-1037ab977912",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ed13f86-68c7-49f5-b417-d299c4c7af53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "561c5e07-e40f-4b27-89b8-f65b1104fc1f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "227896b2-f330-45cb-81fc-d07f205045cb",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02a87a7f-d7f8-4d0a-b09a-03098e938b60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08a809bc-22c0-4417-96f4-a4bf39604846",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6bed6ee-5822-4d91-b279-30af510322b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9908425b-2ad6-4974-ad95-858295389889",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98ee2158-2f8d-485d-b4cc-c712edb942e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d3342a6-c07d-4bed-aa52-dc9cf7b5196e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6672291-07e3-4e25-9428-a9fae75ebd25",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6e4e9bf-a3b7-4eb8-a65f-c4d3101972bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0a79bc4-9c69-4f67-9d2d-f3d830d1fb5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b7eac85-46bf-45f8-b7b8-7b49dd4470d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c519d64a-b331-48b3-ab2d-56aea6df4f8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae0397cb-cdb5-4ef2-9d0c-0e236039dc07",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a349934-4c18-4ebb-84f0-39171f82fd8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e270ae28-0f8b-40e2-a1b2-628015648010",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "114653ea-51c4-4971-9cb5-e6ba15e08066",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1effb13e-af8e-4aab-9f49-8a1d80e37e14",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd815794-4ff5-468e-a192-c9a2c41e0114",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10f65711-0def-45d8-a124-dbc0d6233370",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea8315f1-9e83-48af-881f-c436eacd2654",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c1724a1-9f2f-4327-b06a-b313eefbac64",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2c27478-6aff-4aec-9997-33f92193fd9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc7986f1-8502-4fcc-9782-38ba07cf6185",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21caf1bc-d9f7-4bc6-9dd4-e8cfe9f8abda",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "631a4e27-666a-4a84-b059-5d9bbe41bbeb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "006180f9-d0d5-4ce2-af61-db047639e60d",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "406551b8-1ea6-48a4-8c0e-502308135943",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7194f685-b442-4079-9387-40752ae69df1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d2d5f2b-20cd-420f-a4d4-be19a7f389fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18797927-dafa-40ef-86e6-3f238b1ce873",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c9c9fe8-bebc-4b73-bf01-f684fd0dd55f",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58452d78-1033-4885-af11-203ad3d9c2c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbb5c1e1-cf72-47c4-80b5-ab0739632032",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6199929-1b8d-4ee0-bc51-c22cb57ef016",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22fc00ad-a58e-4c52-ad5e-2fb130e715f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b44a8be-3336-4cba-9868-7af38456f470",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b1b95e9-1374-4116-98df-721993e4c65a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b3f259c-bb58-49de-8b49-49cff42f93f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a413c833-2ee3-4626-8fb7-aa015525b917",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bee7ba4-c65e-4f98-b07a-ffac158fa095",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bee29fb8-f194-4ac5-b8cc-fc371ebc1944",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2aad0f4-f5f1-4932-99e9-9d62eec1bca2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2047c52c-da0c-4e65-af1a-b510a02c66d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f095350-f788-43e3-bae8-9973b03a8d44",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10ae3397-2a1b-4ccf-b28e-ea7cbcb01cb4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b6c0108-2820-40e8-a38c-39daff1bb436",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9352645-6ac9-4c91-b724-c95d94facf95",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0aea8528-b8e8-447e-976c-546937b2647f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5ca1e30-82d2-433d-b9c8-aec905f0f621",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d388abb-7529-436d-9f34-b911f4fae308",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60e27773-75cc-4167-aac6-7c7f8769b490",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7d7daf8-7c6b-4801-8d58-4ca39ea2d249",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66304237-a956-4fd6-b621-8119e773af84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66cf607b-38a3-4b06-9017-941e3724ca04",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88e3b837-dd39-46c0-8eb5-2f5885e8ff20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cb1a727-e999-4fb3-86ae-34f8570350c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd3c7f37-7053-4a68-b1cc-98dc25d385bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1007cf0-e52e-4f20-9ff1-7490afee31db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b0f87c6-f185-42f7-b57b-e90f17c313d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73d88811-8067-4919-84ae-fc8791e8f3e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40bb2587-94da-4fdb-bd34-a7fb231b502f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "665d5709-9363-46cd-a221-82eb86043097",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edaec115-810d-44f0-9aab-9aab9a719d73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2bd4d16-6300-4da2-ab5e-2df79e787425",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3421ecbf-c1d2-4c82-9b64-dff4e6b35284",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37c8a33e-8f50-4afe-a068-7c605b5338e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8116a5a7-fa9a-4564-99bb-9b0f526be41c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bb86500-a355-44a2-90b8-8048a4d597c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4229d1b-c0f8-4bc3-90e1-80ca58b478ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc76d6ae-472e-40a9-837a-c4142592f221",
+      "comment": "Number elements should indicate 99 after 99 clicks",
+      "command": "assertText",
+      "target": "css=.pip-btn--emphasised .pip-btn__label",
+      "targets": [
+        ["css=.pip-btn--emphasised .pip-btn__label", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button/span/span", "xpath:position"]
+      ],
+      "value": "Add 99 items to cart"
+    }, {
+      "id": "3db1e95d-29c5-4e37-bec9-f82d1f2ee5ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dba41dd0-0c7b-4bf0-bd17-ad91ed37fac2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8dba0da-c42c-48eb-911d-b38ecc3915de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6e334cd-2e48-4b93-9d11-2338afde85c1",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "271ac4ff-d31a-448f-9978-6fd9bcf26667",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "182e3230-4573-4572-8db1-1df9eecd4c7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73e5edc4-5ddf-4a56-9501-7327c406f785",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b361ec93-99e3-4bd1-a8ef-2359822a9908",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f614878-16c3-44c5-9833-7eb2a7c2f2f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd9868c5-71be-4694-8953-e5a3b6d3e098",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-quantity-stepper__increase > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-quantity-stepper__increase > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f75c609-464d-4a03-8184-aac0d45de3c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-btn--emphasised > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-btn--emphasised > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add 99 items to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "961851db-7209-435f-9838-ab34b1341d68",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.pip-btn--emphasised > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-btn--emphasised > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add 99 items to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94389aef-26f1-4293-9de9-cf9b78c20ba7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Continue to cart",
+      "targets": [
+        ["linkText=Continue to cart", "linkText"],
+        ["css=.rec-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue to cart')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/shoppingcart/')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Continue to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2475047c-0af4-4407-ba3e-dd37ff1d5621",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c07eb15-dfb9-4d20-8ddd-56f13cc199fd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,600)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b52ed85-0fe6-4fe3-875e-b24474108ece",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-ingka-quantity-dropdown > select",
+      "targets": [
+        ["css=.cart-ingka-quantity-dropdown > select", "css:finder"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[22]/div[6]/div/div/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c1a2c90-fc48-452b-9b68-a9f665ffe851",
+      "comment": "",
+      "command": "select",
+      "target": "css=.cart-ingka-quantity-dropdown > select",
+      "targets": [],
+      "value": "label=999"
+    }, {
+      "id": "a5416f17-d32f-44e6-be39-c20d34c895ca",
+      "comment": "999 should be selected",
+      "command": "assertSelectedValue",
+      "target": "css=.cart-ingka-quantity-dropdown > select",
+      "targets": [
+        ["css=.cart-ingka-quantity-dropdown > select", "css:finder"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[22]/div[6]/div/div/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div/div/div/select", "xpath:position"]
+      ],
+      "value": "999"
+    }, {
+      "id": "15f98f96-4c35-482e-9923-4678e4c752c3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BLÅHAJ",
+      "targets": [
+        ["linkText=BLÅHAJ", "linkText"],
+        ["css=.product_name__TsEv2 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'BLÅHAJ')]", "xpath:link"],
+        ["xpath=//ul[@id='aria_product_description_70540665']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/p/-70540665')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BLÅHAJ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c6eec92-5345-49a9-a690-521ce120977e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#pip-media-2 .pip-image",
+      "targets": [
+        ["css=#pip-media-2 .pip-image", "css:finder"],
+        ["xpath=(//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"'])[2]", "xpath:img"],
+        ["xpath=//div[@id='pip-media-2']/button/span/img", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a9a4dc3-8fdc-446c-950c-a255e8771b10",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#pip-media-2 .pip-image",
+      "targets": [
+        ["css=#pip-media-2 .pip-image", "css:finder"],
+        ["xpath=(//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"'])[2]", "xpath:img"],
+        ["xpath=//div[@id='pip-media-2']/button/span/img", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d87b7834-2387-441e-b421-da76b4e41133",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-btn--emphasised .pip-btn__label",
+      "targets": [
+        ["css=.pip-btn--emphasised .pip-btn__label", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05e7a3d3-6b3e-4a4b-a6be-f2b6652e4218",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-btn--emphasised .pip-btn__label",
+      "targets": [
+        ["css=.pip-btn--emphasised .pip-btn__label", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[4]/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f922461-6f85-42bb-a096-9eee8d689059",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-toast--show .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-toast--show .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[20]/div[2]/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9893cc9a-ed67-4510-aa27-f21563ea8fff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-shopping-cart-icon",
+      "targets": [
+        ["css=.js-shopping-cart-icon", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97a4fa00-f882-4901-a8f7-e92fa9334b59",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-shopping-cart-icon",
+      "targets": [
+        ["css=.js-shopping-cart-icon", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d3c0930-478e-48e7-917a-c4e4e756791b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-shopping-cart-icon",
+      "targets": [
+        ["css=.js-shopping-cart-icon", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ac895a9-8a19-41f1-9095-a9803a05e416",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,685.3333129882812)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cf4f1fb-6464-4a40-a1ae-92b26b5bee7b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Save for later",
+      "targets": [
+        ["linkText=Save for later", "linkText"],
+        ["css=.moveToList_moveToList__aHSoL > .cart-ingka-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Save for later')]", "xpath:link"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[22]/div[6]/div/div/div[2]/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Save for later')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63aa4a47-7f8c-436e-9578-d537ab08f30a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Remove product",
+      "targets": [
+        ["linkText=Remove product", "linkText"],
+        ["css=.productControls_remove__\\+MOme > .cart-ingka-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Remove product')]", "xpath:link"],
+        ["xpath=//a[@type='tertiary']", "xpath:attributes"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[22]/div[6]/div/div/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remove product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26706a24-8333-4b79-929d-975b9470e4d3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remove product",
+      "targets": [
+        ["linkText=Remove product", "linkText"],
+        ["css=.productControls_remove__\\+MOme > .cart-ingka-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Remove product')]", "xpath:link"],
+        ["xpath=//a[@type='tertiary']", "xpath:attributes"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[22]/div[6]/div/div/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remove product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84e26a9c-a37f-44ea-ada0-b02d7454be30",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1973699d-aa1e-403c-b8c0-c4377364870d",
+    "name": "Product inspection",
+    "commands": [{
+      "id": "9162b4fb-a7de-422d-8cd6-cd36f149cf91",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fcb2ed1-7ef4-4cd5-b150-9c3d81c9f5d7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19043751-46f0-4798-ad95-e8bf29cf5dd1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hero .go-shopping",
+      "targets": [
+        ["css=.hero .go-shopping", "css:finder"],
+        ["xpath=//div[@id='mountId']/div/main/div/div/div/section/div[2]/div/div/a/span[2]", "xpath:idRelative"],
+        ["xpath=//section/div[2]/div/div/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e020d06-9b08-481c-9cf7-cab87a769143",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba0736f7-ed11-466c-82b9-67e942e6df02",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "blahaj"
+    }, {
+      "id": "4d1af4ca-f50f-4643-9bf3-9effa2a1bbd2",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a54bd4ef-91f4-4083-a9a0-919c70f9df13",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.plp-pill:nth-child(4)",
+      "targets": [
+        ["css=.plp-pill:nth-child(4)", "css:finder"],
+        ["xpath=//main[@id='content']/div/div/div/div/div/div[2]/div/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Color')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ad36e56-9731-4835-bfa7-298ddee9c629",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.plp-pill:nth-child(4)",
+      "targets": [
+        ["css=.plp-pill:nth-child(4)", "css:finder"],
+        ["xpath=//main[@id='content']/div/div/div/div/div/div[2]/div/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Color')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97a37a98-8f5b-4858-b4d5-5d597e346d5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=load-more-product-0",
+      "targets": [
+        ["id=load-more-product-0", "id"],
+        ["css=#load-more-product-0", "css:finder"],
+        ["xpath=//a[contains(text(),'Showing additional results below.')]", "xpath:link"],
+        ["xpath=//a[@id='load-more-product-0']", "xpath:attributes"],
+        ["xpath=//section[@id='product-list']/div/a", "xpath:idRelative"],
+        ["xpath=//section/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Showing additional results below.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44dbfdb9-cd8d-4a90-8605-82312eb7f944",
+      "comment": "",
+      "command": "click",
+      "target": "css=.plp-product-list__products > .plp-fragment-wrapper:nth-child(1) .pip-compact-price-package",
+      "targets": [
+        ["css=.plp-product-list__products > .plp-fragment-wrapper:nth-child(1) .pip-compact-price-package", "css:finder"],
+        ["xpath=//section[@id='product-list']/div/div/div[2]/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e33ae1b8-cc78-406b-8311-6f121e8a90bf",
+      "comment": "BLÅHAJ is shown",
+      "command": "verifyText",
+      "target": "css=.pip-header-section__title--big",
+      "targets": [
+        ["css=.pip-header-section__title--big", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div/div/div[2]/h1/div/div/span", "xpath:idRelative"],
+        ["xpath=//h1/div/div/span", "xpath:position"]
+      ],
+      "value": "BLÅHAJ"
+    }, {
+      "id": "f8e291a3-0091-4397-9da9-c9fcdc01f3e9",
+      "comment": "Image 1 present",
+      "command": "verifyElementPresent",
+      "target": "css=#pip-media-1 .pip-image",
+      "targets": [
+        ["css=#pip-media-1 .pip-image", "css:finder"],
+        ["xpath=//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"']", "xpath:img"],
+        ["xpath=//div[@id='pip-media-1']/button/span/img", "xpath:idRelative"],
+        ["xpath=//button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4171f1a-cf07-44c1-b06d-bca547e20ba7",
+      "comment": "Image 2 present",
+      "command": "verifyElementPresent",
+      "target": "css=#pip-media-2 .pip-image",
+      "targets": [
+        ["css=#pip-media-2 .pip-image", "css:finder"],
+        ["xpath=(//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"'])[2]", "xpath:img"],
+        ["xpath=//div[@id='pip-media-2']/button/span/img", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "423e469a-7ec5-47bb-a570-6f3bb22c7494",
+      "comment": "Image 3 present",
+      "command": "verifyElementPresent",
+      "target": "css=#pip-media-3 .pip-image",
+      "targets": [
+        ["css=#pip-media-3 .pip-image", "css:finder"],
+        ["xpath=(//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"'])[3]", "xpath:img"],
+        ["xpath=//div[@id='pip-media-3']/button/span/img", "xpath:idRelative"],
+        ["xpath=//div[4]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8406ab7c-f3ee-418b-a4b2-7f3539669345",
+      "comment": "Image 4 present",
+      "command": "verifyElementPresent",
+      "target": "css=#pip-media-4 .pip-image",
+      "targets": [
+        ["css=#pip-media-4 .pip-image", "css:finder"],
+        ["xpath=(//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"'])[4]", "xpath:img"],
+        ["xpath=//div[@id='pip-media-4']/button/span/img", "xpath:idRelative"],
+        ["xpath=//div[5]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd0a2213-9747-452a-ac93-ded4841ac606",
+      "comment": "Image 5 present",
+      "command": "verifyElementPresent",
+      "target": "css=#pip-media-5 .pip-image",
+      "targets": [
+        ["css=#pip-media-5 .pip-image", "css:finder"],
+        ["xpath=(//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"'])[5]", "xpath:img"],
+        ["xpath=//div[@id='pip-media-5']/button/span/img", "xpath:idRelative"],
+        ["xpath=//div[6]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42598fb0-053b-4638-9ced-388b39c0a5fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pip-media-1 .pip-image",
+      "targets": [
+        ["css=#pip-media-1 .pip-image", "css:finder"],
+        ["xpath=//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"']", "xpath:img"],
+        ["xpath=//div[@id='pip-media-1']/button/span/img", "xpath:idRelative"],
+        ["xpath=//button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f43f9593-75f4-4f54-9502-974d84b32810",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.pip-modal-wrapper__backdrop",
+      "targets": [
+        ["css=.pip-modal-wrapper__backdrop", "css:finder"],
+        ["xpath=//div[@id='range-modal-mount-node']/div/div", "xpath:idRelative"],
+        ["xpath=//main/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ceb68d4-329e-4ca5-a846-97235caa365d",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=content",
+      "targets": [
+        ["id=content", "id"],
+        ["css=#content", "css:finder"],
+        ["xpath=//main[@id='content']", "xpath:attributes"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be481814-9339-4bcc-9e93-76562261e47f",
+      "comment": "",
+      "command": "click",
+      "target": "id=content",
+      "targets": [
+        ["id=content", "id"],
+        ["css=#content", "css:finder"],
+        ["xpath=//main[@id='content']", "xpath:attributes"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56bb6b6c-a8d2-42f6-a93e-fb0aa4969952",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pip-media-2 .pip-image",
+      "targets": [
+        ["css=#pip-media-2 .pip-image", "css:finder"],
+        ["xpath=(//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"'])[2]", "xpath:img"],
+        ["xpath=//div[@id='pip-media-2']/button/span/img", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8c4fc79-6ff7-432c-bf04-f8b21533c777",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#pip-media-2 .pip-image",
+      "targets": [
+        ["css=#pip-media-2 .pip-image", "css:finder"],
+        ["xpath=(//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"'])[2]", "xpath:img"],
+        ["xpath=//div[@id='pip-media-2']/button/span/img", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3f79209-e510-44a8-b41b-c0bfcb8f4cb1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#pip-media-2 .pip-image",
+      "targets": [
+        ["css=#pip-media-2 .pip-image", "css:finder"],
+        ["xpath=(//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"'])[2]", "xpath:img"],
+        ["xpath=//div[@id='pip-media-2']/button/span/img", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71d3cd20-777f-48db-ba6d-f4836dc7fdfc",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.pip-modal-wrapper__backdrop",
+      "targets": [
+        ["css=.pip-modal-wrapper__backdrop", "css:finder"],
+        ["xpath=//div[@id='range-modal-mount-node']/div/div", "xpath:idRelative"],
+        ["xpath=//main/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65f58b7c-1927-4390-9635-8ab40d65a01b",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=content",
+      "targets": [
+        ["id=content", "id"],
+        ["css=#content", "css:finder"],
+        ["xpath=//main[@id='content']", "xpath:attributes"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6095779a-f5b6-4cbf-8b80-c4453224f13d",
+      "comment": "",
+      "command": "click",
+      "target": "id=content",
+      "targets": [
+        ["id=content", "id"],
+        ["css=#content", "css:finder"],
+        ["xpath=//main[@id='content']", "xpath:attributes"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75d93e11-e51e-4032-bbb9-3386f4fa9bdb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pip-media-3 .pip-image",
+      "targets": [
+        ["css=#pip-media-3 .pip-image", "css:finder"],
+        ["xpath=(//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"'])[3]", "xpath:img"],
+        ["xpath=//div[@id='pip-media-3']/button/span/img", "xpath:idRelative"],
+        ["xpath=//div[4]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16e3f0ec-d01f-4690-ae52-bb048d38c8be",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8633db83-c554-4bbb-81da-7be7c01aa6a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-modal-header__close > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-modal-header__close > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='range-modal-mount-node']/div/div[3]/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8a78c4d-dcc3-41a5-9208-7be43089a2e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pip-media-4 .pip-image",
+      "targets": [
+        ["css=#pip-media-4 .pip-image", "css:finder"],
+        ["xpath=(//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"'])[4]", "xpath:img"],
+        ["xpath=//div[@id='pip-media-4']/button/span/img", "xpath:idRelative"],
+        ["xpath=//div[5]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5db36e55-8cb5-4b3e-8411-029ba4e48fb8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26bd9e49-ce8c-484b-8c96-f40d5414a0c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-modal-header__close > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-modal-header__close > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='range-modal-mount-node']/div/div[3]/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31cb6148-3d7f-4b6e-91e3-1b6c591561a4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,800)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d61e68a8-0ab3-4fe8-a6ac-073822bbad17",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pip-media-5 .pip-image",
+      "targets": [
+        ["css=#pip-media-5 .pip-image", "css:finder"],
+        ["xpath=(//img[@alt='BLÅHAJ Soft toy, baby shark, 21 ¾ \"'])[5]", "xpath:img"],
+        ["xpath=//div[@id='pip-media-5']/button/span/img", "xpath:idRelative"],
+        ["xpath=//div[6]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba949c62-1fa3-40fb-8b32-4c42cdcb0cdb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-modal-header__close > .pip-btn__inner",
+      "targets": [
+        ["css=.pip-modal-header__close > .pip-btn__inner", "css:finder"],
+        ["xpath=//div[@id='range-modal-mount-node']/div/div[3]/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44023f1c-596a-4e5b-baf8-921c7367e8b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-chunky-header__details .pip-chunky-header__title",
+      "targets": [
+        ["css=.pip-chunky-header__details .pip-chunky-header__title", "css:finder"],
+        ["xpath=//div[@id='pip-product-information-section']/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab0befb3-85b4-47ef-bf31-c16d6d09f7d3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a5a7896-bb4d-490e-b750-269cc710706d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-details-good-to-know .pip-accordion__heading",
+      "targets": [
+        ["css=#product-details-good-to-know .pip-accordion__heading", "css:finder"],
+        ["xpath=(//button[@type='button'])[77]", "xpath:attributes"],
+        ["xpath=//li[@id='product-details-good-to-know']/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/ul/li/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ce5f728-4244-479c-bdc8-e2ea4b9fec57",
+      "comment": "Product details shown",
+      "command": "verifyText",
+      "target": "css=.pip-product-details",
+      "targets": [],
+      "value": "Product details"
+    }, {
+      "id": "9432e9a3-ac96-4fc2-bde0-ca471f5ed6e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-details-material-and-care .pip-accordion__heading",
+      "targets": [
+        ["css=#product-details-material-and-care .pip-accordion__heading", "css:finder"],
+        ["xpath=(//button[@type='button'])[78]", "xpath:attributes"],
+        ["xpath=//li[@id='product-details-material-and-care']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/ul/li[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "766cf18f-eb3b-4a3d-9d8c-a517e1498d59",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-details-safety-and-compliance .pip-accordion__heading",
+      "targets": [
+        ["css=#product-details-safety-and-compliance .pip-accordion__heading", "css:finder"],
+        ["xpath=(//button[@type='button'])[79]", "xpath:attributes"],
+        ["xpath=//li[@id='product-details-safety-and-compliance']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/ul/li[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "054f6d91-276b-49bd-a5b2-567469817379",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.pip-modal-wrapper__backdrop",
+      "targets": [
+        ["css=.pip-modal-wrapper__backdrop", "css:finder"],
+        ["xpath=//div[@id='range-modal-mount-node']/div/div", "xpath:idRelative"],
+        ["xpath=//main/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "706de766-9039-4881-a3f9-81de788044ab",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.pip-chunky-header__details",
+      "targets": [
+        ["css=.pip-chunky-header__details", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//div[@id='pip-product-information-section']/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Product details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecac0d3c-d4fc-41d9-acb5-8a60ca88c287",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-page-container",
+      "targets": [
+        ["css=.pip-page-container", "css:finder"],
+        ["xpath=//main[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//main/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87d13d4d-2680-4eee-a976-460d19a155eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-chunky-header__measurement",
+      "targets": [
+        ["css=.pip-chunky-header__measurement", "css:finder"],
+        ["xpath=(//button[@type='button'])[17]", "xpath:attributes"],
+        ["xpath=//div[@id='pip-product-information-section']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Measurements')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c5cbf0c-ec64-4cd6-b9f3-a42539958e3b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "457a02ca-1fdd-43c4-9e3e-32b611bd08a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#measurements-packaging .pip-accordion-item-header__title",
+      "targets": [
+        ["css=#measurements-packaging .pip-accordion-item-header__title", "css:finder"],
+        ["xpath=//li[@id='measurements-packaging']/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/ul/li/div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32f93796-d9d1-47e5-bb10-1e767a733b8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-page-container",
+      "targets": [
+        ["css=.pip-page-container", "css:finder"],
+        ["xpath=//main[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//main/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8715c385-399e-45d9-86ca-06c71ed24d2e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-product-summary__description",
+      "targets": [
+        ["css=.pip-product-summary__description", "css:finder"],
+        ["xpath=//main[@id='content']/div/div/div/div[2]/div[3]/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Baby sharks quickly learn to be independent and take care of themselves. It takes a little longer for your child, but with this soft friend, every day full of developing and learning feels a little safer.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96608ea3-8f68-4c97-ac1c-e78706c7f5ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-modal-wrapper__backdrop",
+      "targets": [
+        ["css=.pip-modal-wrapper__backdrop", "css:finder"],
+        ["xpath=//div[@id='range-modal-mount-node']/div/div", "xpath:idRelative"],
+        ["xpath=//main/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42757e6c-9d53-4151-8366-7e5448604531",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-chunky-header__reviews .pip-chunky-header__title",
+      "targets": [
+        ["css=.pip-chunky-header__reviews .pip-chunky-header__title", "css:finder"],
+        ["xpath=//div[@id='pip-product-information-section']/div[3]/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3490b9b1-b1d5-43ca-8dd3-5949ede91c15",
+      "comment": "",
+      "command": "click",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "80f16af8-eb6a-4a7c-b7c7-6585d5e0f81d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.ikea.com/"],
+  "plugins": []
+}

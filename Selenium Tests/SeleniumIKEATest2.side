@@ -1,0 +1,476 @@
+{
+  "id": "7160a323-2708-4cc5-ace8-33a2ff707c0a",
+  "version": "2.0",
+  "name": "IKEA",
+  "url": "https://www.ikea.com/ca/en",
+  "tests": [{
+    "id": "0a30c527-671a-40eb-b59b-2528f5530a0a",
+    "name": "Sidebar Products",
+    "commands": [{
+      "id": "381bb844-6f00-47c2-9cdc-ca9279e806d6",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f05b5425-099e-4862-aad2-664a80a7e3f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1295x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64aacb26-9ccc-4bd4-b3d1-05c2e7ae54bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-btn--open-menu > .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-btn--open-menu > .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e275956a-1a04-4c9c-a329-2b1ac7bf0b06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-menu__nav__main > li:nth-child(1) > .hnf-link",
+      "targets": [
+        ["css=.hnf-menu__nav__main > li:nth-child(1) > .hnf-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Products')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/cat/products-products/')])[2]", "xpath:href"],
+        ["xpath=//div[3]/nav/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fa0eacf-c989-494d-9b55-81ea85d2b124",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89d168ba-43c2-4fa8-9109-91a5b71b066e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Outdoor",
+      "targets": [
+        ["linkText=Outdoor", "linkText"],
+        ["css=.hnf-menu__nav2:nth-child(2) > .hnf-menu__nav2__main > li:nth-child(8) > .hnf-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Outdoor')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/cat/outdoor-od001/')]", "xpath:href"],
+        ["xpath=//nav[2]/ul/li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fa4abdc-3f00-46a2-9d29-7a7775024f43",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Outdoor storage",
+      "targets": [
+        ["linkText=Outdoor storage", "linkText"],
+        ["css=li:nth-child(8) li:nth-child(3) > .hnf-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Outdoor storage')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/cat/outdoor-organizing-21958/')]", "xpath:href"],
+        ["xpath=//li[8]/nav/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Outdoor storage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7b6afd63-3efc-474e-92e8-a2646570474f",
+    "name": "Sidebar Rooms",
+    "commands": [{
+      "id": "ff743fe4-71f2-44c3-97e6-f62de790cb62",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff0ce80b-ece6-46a4-ac5a-9d3eb0a61246",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x697",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63307a25-9a5e-4be5-8cce-eebb229772cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-btn--open-menu > .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-btn--open-menu > .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a48ec81-f580-431d-8ce2-4aabe512bdc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-menu__nav__main > li:nth-child(2) > .hnf-link",
+      "targets": [
+        ["css=.hnf-menu__nav__main > li:nth-child(2) > .hnf-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Rooms')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/rooms/')])[2]", "xpath:href"],
+        ["xpath=//div[3]/nav/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dae3a1b-fbe9-4b30-959a-12382d9bde2c",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(5) .hnf-image",
+      "targets": [
+        ["css=li:nth-child(5) .hnf-image", "css:finder"],
+        ["xpath=//img[contains(@src,'https://www.ikea.com/images/a-light-kitchen-with-aelvsta-rattan-seat-and-black-frame-cha-b3d791d36d2c081be8302c8a4793dd1e.jpg?f=xxxs')]", "xpath:img"],
+        ["xpath=//li[5]/a/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "19211a5c-4001-45a1-8ae5-fc4065228551",
+    "name": "Sidebar Best Prices",
+    "commands": [{
+      "id": "cbbca1e1-2a0e-457b-aff8-484ab632e891",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2408b786-5081-4aca-add5-5de3d5a6a7e4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x697",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fa409df-4abd-45fb-a698-b5e2470bfed6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-btn--open-menu > .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-btn--open-menu > .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08ba8a7d-c5dc-4234-989b-76c2ad34eb26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-menu__nav__main > li:nth-child(3) > .hnf-link",
+      "targets": [
+        ["css=.hnf-menu__nav__main > li:nth-child(3) > .hnf-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Best prices')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/campaigns/our-best-price-pubcc18f5f9')])[2]", "xpath:href"],
+        ["xpath=//div[3]/nav/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00de3433-bcfe-48ff-be93-25ba72acfc64",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Affordable products",
+      "targets": [
+        ["linkText=Affordable products", "linkText"],
+        ["css=.hnf-menu__nav2:nth-child(4) > .hnf-menu__nav2__main > li:nth-child(4) > .hnf-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Affordable products')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/campaigns/affordable-products-for-everyday-life-pub7390ce80')]", "xpath:href"],
+        ["xpath=//nav[4]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Affordable products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ab16e45a-0f50-4625-bd1a-f773364baa07",
+    "name": "Enter Postal Code (Invalid)",
+    "commands": [{
+      "id": "f99e42cb-5630-4388-b9e6-e464066a1454",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7156f0a9-c404-4b49-9818-c1641f2a79e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-location__btn-wrapper--postalcode > .hnf-btn--tertiary .hnf-btn__label",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper--postalcode > .hnf-btn--tertiary .hnf-btn__label", "css:finder"],
+        ["xpath=//div/div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47a9374a-09b9-46e2-9195-31ae6692dd45",
+      "comment": "",
+      "command": "click",
+      "target": "id=hnf-postalcodepicker",
+      "targets": [
+        ["id=hnf-postalcodepicker", "id"],
+        ["css=#hnf-postalcodepicker", "css:finder"],
+        ["xpath=//aside[@id='hnf-postalcodepicker']", "xpath:attributes"],
+        ["xpath=//aside[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59fb44fe-62ff-471e-a69f-5d58a969d60a",
+      "comment": "",
+      "command": "type",
+      "target": "id=hnf-txt-postalcodepicker-postcode",
+      "targets": [
+        ["id=hnf-txt-postalcodepicker-postcode", "id"],
+        ["css=#hnf-txt-postalcodepicker-postcode", "css:finder"],
+        ["xpath=//input[@id='hnf-txt-postalcodepicker-postcode']", "xpath:attributes"],
+        ["xpath=//div[@id='postalcodepicker-input-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "1A1A1A"
+    }, {
+      "id": "424e0002-127b-4792-beb6-dfb856ed6a3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#hnf-btn-postalcodepicker-use > .hnf-btn__inner",
+      "targets": [
+        ["css=#hnf-btn-postalcodepicker-use > .hnf-btn__inner", "css:finder"],
+        ["xpath=//button[@id='hnf-btn-postalcodepicker-use']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "411b1132-df74-4232-8053-e78cd276a693",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#hnf-txt-postalcodepicker-postcode-invalid > .hnf-form-field__message",
+      "targets": [
+        ["css=#hnf-txt-postalcodepicker-postcode-invalid > .hnf-form-field__message", "css:finder"],
+        ["xpath=//span[@id='hnf-txt-postalcodepicker-postcode-invalid']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/span[2]", "xpath:position"]
+      ],
+      "value": "The postal code you entered is not valid. Please try again."
+    }]
+  }, {
+    "id": "48cc49c8-d664-4eb8-b3be-0aac7c902c85",
+    "name": "Enter Postal Code (Valid)",
+    "commands": [{
+      "id": "5a350341-4a1d-47d5-952d-0e22f8851a7d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e372cf58-3a8c-4d7a-8066-0b1f673c4b22",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-location__btn-wrapper--postalcode > .hnf-btn--tertiary > .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper--postalcode > .hnf-btn--tertiary > .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[5]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba7fb951-521e-48d7-a8ff-787cd3fb3b23",
+      "comment": "",
+      "command": "type",
+      "target": "id=hnf-txt-postalcodepicker-postcode",
+      "targets": [
+        ["id=hnf-txt-postalcodepicker-postcode", "id"],
+        ["css=#hnf-txt-postalcodepicker-postcode", "css:finder"],
+        ["xpath=//input[@id='hnf-txt-postalcodepicker-postcode']", "xpath:attributes"],
+        ["xpath=//div[@id='postalcodepicker-input-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "T2A7N1"
+    }, {
+      "id": "0c47dfcf-a963-4611-9b19-77a245ced6f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#hnf-btn-postalcodepicker-use > .hnf-btn__inner",
+      "targets": [
+        ["css=#hnf-btn-postalcodepicker-use > .hnf-btn__inner", "css:finder"],
+        ["xpath=//button[@id='hnf-btn-postalcodepicker-use']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c4af778-706b-45cb-91d7-37e8cc334353",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.hnf-toast__text",
+      "targets": [
+        ["css=.hnf-toast__text", "css:finder"],
+        ["xpath=//div[20]/div/div/p", "xpath:position"]
+      ],
+      "value": "You've selected T2A7N1 as your postal code"
+    }]
+  }, {
+    "id": "6bfc439f-f0a5-4e2f-adc6-9d44559489c2",
+    "name": "Sidebar Design",
+    "commands": [{
+      "id": "a2d42480-a6c7-444a-987b-5b7ff993cba7",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04fff696-bc07-4c80-989c-9245f667d423",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1248x630",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ba546fa-a9a4-47fe-9b16-21596d4d6e43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-btn--open-menu > .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-btn--open-menu > .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f982a6e2-8a6c-4351-a95c-92e4cc9855a0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-menu__nav__main > li:nth-child(4) > .hnf-link",
+      "targets": [
+        ["css=.hnf-menu__nav__main > li:nth-child(4) > .hnf-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Design')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/home-design/')])[2]", "xpath:href"],
+        ["xpath=//div[3]/nav/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e012b7b-5e10-4d97-aa68-684f608abe67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-menu__nav__main > li:nth-child(4) > .hnf-link",
+      "targets": [
+        ["css=.hnf-menu__nav__main > li:nth-child(4) > .hnf-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Design')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/home-design/')])[2]", "xpath:href"],
+        ["xpath=//div[3]/nav/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a5bf368f-7b39-4fc6-98fb-37660528a024",
+    "name": "Sidebar Close by Clicking X",
+    "commands": [{
+      "id": "872c2ffd-e92f-4a63-af6b-580c537db5ab",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7856c245-428e-43ae-b67f-60d2165127d7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1248x630",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2014f68d-83ef-417a-9454-7a71996ad709",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=hnf-header-hamburger-label",
+      "targets": [
+        ["id=hnf-header-hamburger-label", "id"],
+        ["css=#hnf-header-hamburger-label", "css:finder"],
+        ["xpath=//span[@id='hnf-header-hamburger-label']", "xpath:attributes"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcf85238-51be-45ea-89a4-7c68e470bbb0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=hnf-header-hamburger-label",
+      "targets": [
+        ["id=hnf-header-hamburger-label", "id"],
+        ["css=#hnf-header-hamburger-label", "css:finder"],
+        ["xpath=//span[@id='hnf-header-hamburger-label']", "xpath:attributes"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ecf4d12-d981-4445-9276-06aaeb928068",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-btn--open-menu > .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-btn--open-menu > .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86d7c49f-24f8-420a-9029-639104f7247d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#hnf-menu-close-btn > .hnf-btn__inner",
+      "targets": [
+        ["css=#hnf-menu-close-btn > .hnf-btn__inner", "css:finder"],
+        ["xpath=//button[@id='hnf-menu-close-btn']/span", "xpath:idRelative"],
+        ["xpath=//aside/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cfdb8e5d-d99a-460b-9bf3-0e2d9d9b1579",
+    "name": "Sidebar Close by Clicking Outside",
+    "commands": [{
+      "id": "a32e6cc0-a438-4ab8-840b-c3b807bc4f03",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eab79d21-f77b-47ed-9c56-6ecb36fa0f26",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1248x630",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc295198-1019-4639-ac9b-68f9e9a46d6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-btn--open-menu > .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-btn--open-menu > .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4da9c22f-d17e-43e6-a525-62b67a477c84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-overlay",
+      "targets": [
+        ["css=.hnf-overlay", "css:finder"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "261e12d4-298c-4acb-b286-35acec856387",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.ikea.com/", "https://www.ikea.com/ca/en"],
+  "plugins": []
+}
