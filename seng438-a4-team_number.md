@@ -32,9 +32,11 @@ In part one, we inject mutation faults in a Java code-base using a mutation test
 # Report all the statistics and the mutation score for each test  +class
 
 DataUtitlities.java before changes
+
 <img src="./media/DataUtilitiesBefore.png" width="700" />
 
 DataUtilities.java after changes 
+
 <img src="./media/DataUtilitiesAfter.png" width="700" />
 
 
