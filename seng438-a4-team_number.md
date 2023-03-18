@@ -32,10 +32,10 @@ In part one, we inject mutation faults in a Java code-base using a mutation test
 # Report all the statistics and the mutation score for each test  +class
 
 DataUtitlities.java before changes
-
+<img src="./media/DataUtilitiesBefore.png" width="200" />
 
 DataUtilities.java after changes 
-
+<img src="./media/DataUtilitiesAfter.png" width="200" />
 
 
 As shown in the two images above, utilizing the PIT mutations, we were able to get our Line Coverage and Mutation coverage from 91% to 99% and 83% to 90% respectively. 
@@ -50,9 +50,10 @@ One thing we have noticed by inspecting the mutation changes using PIT is that i
 However, in the end we are happy with the percentage of mutation coverage we got up to, that is, 90%. This percentage is accounting for all the equivalent mutations as well, which means that our real mutation coverage would be much higher, close to 100%!
 
 Range.java before changes.
-
+<img src="./media/RangeBefore.png" width="200" />
 
 Range.java after changes.
+<img src="./media/RangeAfter.png" width="200" />
 
 As shown above we were able to improve our testing of the range class with line coverage going up from 95% to 100% and mutation coverage going up from 70% to 80%.
 
